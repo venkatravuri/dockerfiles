@@ -1,0 +1,8 @@
+# Base Alpine Linux based image with OpenJDK
+FROM openjdk:8
+
+COPY HelloWorld.java .
+
+RUN javac HelloWorld.java
+
+CMD ["java", "HelloWorld"]
